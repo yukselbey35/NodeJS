@@ -77,10 +77,12 @@ body{
 	font-weight:bold;
 	text-decoration:none;
 	margin-bottom: 5px;
+	border:1px orange solid;
 }
 #left_menu li a:hover{
 	background-color:blue;
 	color: #000;
+	border:1px red solid;
 }
 .news_box{
 	border: 1px solid #ccc;
