@@ -70,7 +70,7 @@ body{
 #left_menu li a{
 	
 	display:block;
-	background:url(../img/leftmenubutton3.png) no-repeat;
+	background-color:gray;
 	line-height: 35px;
 	padding-left: 45px;
 	color:#fff;
@@ -79,7 +79,7 @@ body{
 	margin-bottom: 5px;
 }
 #left_menu li a:hover{
-	background:url(../img/leftmenubutton4.png) no-repeat;
+	background-color:blue;
 	color: #000;
 }
 .news_box{
