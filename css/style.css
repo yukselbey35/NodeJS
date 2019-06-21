@@ -80,8 +80,8 @@ body{
 	border:1px orange solid;
 }
 #left_menu li a:hover{
-	background-color:blue;
-	color: #000;
+	background-color:silver;
+	color:black;
 	border:1px red solid;
 }
 .news_box{
