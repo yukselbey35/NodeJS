@@ -1,262 +1,186 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+/*Reset margin and padding*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*When we set the font-size all font-size of the html will effect from that by % 
+I can control font-size*/
+html{
+    font-size:7px;
 }
 
-body {
-	font-family: 'Lato', sans-serif;
-	font-size: 14px;
-	color: #333;
-	line-height: 135%;
-	background: #f1f1f1;
+body{
+    font-family: 'Open Sans', sans-serif;
+    color:#fff;
+    font-size:1.6rem; /*16px*/
+    line-height: 1.5;
+    text-align: center;
+    background-color: #333;
+
+}
+/*All a elements will effect by none */
+a {
+    text-decoration: none;
+}
+p {
+    padding:1.6rem 0;
+    font-size: 2rem;
+
+}
+img{
+    width: 100%;
+    height: auto; /*Will set the height depend on width*/
+}
+.clearfix{
+    content: "";
+    display: block;
+    clear: both;
 }
 
-h2 {
-	font-size: 30px;
-	margin-bottom: 20px;
-	font-weight: 500;
+/*header */
+header{
+    height: 45rem;
+    padding:2rem;
+
 }
 
-.container {
-	width: 1200px;
-	margin: 0 auto;
+header .bg-image{
+    position:absolute;
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 45rem;
+    width: 100%;
+    opacity: 0.6;
+    z-index:-1;/*Send the pic back*/
 }
+header h1{
+    padding: 11rem;
+    padding-bottom: 0;
 
-#blog-post-container {
-	width: 75%;
-	float: left;
-}
 
-#other-posts {
-	width: 25%;
-	float: left;
-	padding-left: 20px;
-	position: fixed;
-	right: 60px;
-}
-
-#author-box {}
-
-.box {
-	background: white;
-	margin-bottom: 30px;
-	border-radius: 5px;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.8);
+#section-a:hover {
+	opacity: 0.7;
 	
 }
-.p20{
-	padding: 20px;
 }
-.mt20{
-	margin-top: 20px;
+#brian{
+    padding: 3rem;
 }
-.blog-post {
-	position: relative;
-}
-
-.blog-post img {
-	height: 60%;
-	width: 100%;
-	border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
-	transition: opacity 0.3s linear;
-}
-.blog-post img:hover {
-	opacity: 0.8;
-	cursor: pointer;
+.btn { 
+    display: inline-block;
+    background:#333;
+    color:#fff;
+    border:1px solid #666;
+    padding:1.6rem 3.2rem;
+    margin:0.5rem 0;
+    transition:all 0.4s;
 }
 
-.blog-title{
-	font-weight: 700;
+.btn:hover {
+    background-color: #eaeaea;
+    color:#333;
+} 
+/*Section-a */
+#section-a{
+    background-color: #eaeaea;
+    color:#333;
+    padding: 3.2rem 0;
+    transition: opacity 0.4s linear;
 }
-.blog-title a{
-	color:#444;
-	text-decoration: none;
-	transition:all 0.5s;
-}
-.blog-title a:hover{
-	color:#DA4453;
+
+#section-a:hover {
+	opacity: 0.7;
 	
 }
 
-.date {
-	position: absolute;
-	right: 20px;
-	bottom: 20px;
-	color: #aaa;
-	font-size: 12px;
+/*section-b */
+#section-b{
+    padding:2rem;
+    transition: opacity 0.4s linear;		
 }
 
-.blog-text {
-	margin-top: 15px;
-	margin-bottom: 15px;
-	font-size: 16px;
-	color: #aaa;
-	line-height: 22px;
-	text-align: justify;
-}
-
-.tags li {
-	list-style: none;
-	display: inline;
-	margin-right: 5px;
-}
-
-.tags li a {
-	text-decoration: none;
-}
-
-#author-box {
-	border-top: 1px solid RGB(0, 0, 0, .125);
-	padding-top: 10px;
-}
-
-
-#author-box img {
-	border-radius: 50%;
-	float: left;
-}
-
-.author-text {
-	float: left;
-	margin-top: 50px;
-	margin-left: 20px;
-}
-
-#share a{
-	color:gray;
-	text-decoration: none;
-	margin-right: 12px;
-	opacity: 0.9;
-}
-
-#share a:hover{
-	opacity: 0.6;
-	color:rgb(19, 32, 204);
-}
-
-li{
-	list-style: none;
-}
-.tags ul{
-	list-style-type: none;	
-}
-
-.tags ul li{
-	margin-bottom: 10px;
-}
-
-.header{
-	margin-bottom: 15px;
-	padding-bottom: 10px;
-	border-bottom: 1px solid rgb(0,0,0,0.2);
-}
-
-.tag{
+#section-b:hover {
+	opacity: 0.7;
 	
-	display: inline-block;
-	padding-left: 8px;
-	padding-right: 8px;
-	text-align: center;
-	border-radius: 3px;
-}
-.btn{
-	font-size: 10px;
-	display: inline-block;
-	padding: 5px 10px;
-	margin-top: 10px;
-	border-radius: 4px;
-	color:#fff;
-	background-color: #DA4453;
-	text-transform: uppercase;
-	cursor: pointer;
-	border: 1px solid transparent;
-	transition: background-color 0.5s linear;
-}
-.btn:hover{
-	background-color: #5b3ca1;
-	border-color:#363636;
 }
 
-.btn1{
-	width: auto;
-	font-size: 10px;
-	display: inline-block;
-	padding: 5px 10px;
-	margin-top: 10px;
-	border-radius: 4px;
-	color:#fff;
-	background-color: rgb(102, 29, 219);
-	text-transform: uppercase;
-	cursor: pointer;
-	border: 1px solid transparent;
-	transition: background-color 0.5s linear;
-}
-.btn1:hover{
-	background-color: white;
-	border-color:rgb(102, 29, 219);
-	color:rgb(102, 29, 219);
-	width: 10%;
-	font-weight: bold;
+
+#section-b ul{
+    list-style: none;
 }
 
-.card-4{
-			
+#section-b li{
+    background: #fff;
+    color:#333;
+    margin-bottom: 1.5rem;
+}
+.col-content{
+    padding: 1.5rem;
+}
+#section-c{
+    background-color: #eaeaea;
+    color: #333;
+    padding: 5rem;
 }
 
-.card-4:hover{
-	-webkit-box-shadow: 10px 10px;
-	-mox-box-shadow: 10px 10px;
-	box-shadow: 10px 10px 20px 2px rgba(197, 176, 56, 0.6);
+/*Section-d */
+#section-d .box{
+    padding: 5rem;
+    background-color: rgb(37, 34, 34);
+}
+#section-d .box:first-child {
+    background-color:#3ca4e6;
+}
+/*footer */
+footer{
+    padding: 4rem;
+    background: #666;
+}
+footer a {
+    color:#111c9a;
 }
 
-.card-5{
-			
+/*Tablet view */
+@media screen and (min-width:800px){
+    html{
+        font-size:9px;
+    }
 }
 
-.card-5:hover{
-	-webkit-box-shadow: 10px 10px;
-	-mox-box-shadow: 10px 10px;
-	box-shadow: 10px 10px 20px 2px rgba(95, 174, 238, 0.6);
-}
-.opl{
-	text-decoration: none;
+/*When the window get bigger than 700pixels my responsive will run 
+This is desktop view css*/
+@media screen and (min-width:1200px){
+    #section-b li{
+        width: 28%;
+        margin: 1%;
+        display: inline-block;
+    }
+
+    .box {
+        width: 50%;
+        float: left;
+    }
+
+    html{
+        font-size:12px;
+    }
 }
 
-.opl:hover{
-	text-decoration: none;
-	color: red;
-}
-/* Nav Bar Style*/
-#nav{
-	background-color: #333;
-}
 
-#nav ul{
-	list-style-type: none;
-	overflow:hidden;
-}
-#nav li{
-	float: left;
-}
 
-#nav li a {
-	display: inline-block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	transition: background-color 0.3s linear;
-}
 
-#nav li a:hover {
-	background-color: rgb(226, 59, 59);
-	color: white;
 
-}
-.active{
-	background-color: rgb(83, 68, 218);
-}
+
+
+
+
+
+
+
+
+
+
+
+
